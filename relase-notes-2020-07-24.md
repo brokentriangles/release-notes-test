@@ -26,7 +26,8 @@ This sprint's round of rebuilds upgrades k8s a point-release version to 1.15.11.
 
 | aks-cluster-1-dev | aks-cluster-1-stg | aks-cluster-1-prd | aks-cluster-2-prd |
 | ----------------- | ----------------- | ----------------- | ----------------- |
-|    1.15.11    |    1.15.11    |     1.15.10   |     1.15.11   | 
+|    1.15.11        |    1.15.11        |     1.15.10       |     1.15.11       | 
+
 > **TODO** The `aks-cluster-1-prd` rebuild to be complete 2020-08-03 will bring an end to this cycle of cluster rebuilds.
 
 In addition to a version upgrade, we are now also using [managed identities](https://docs.microsoft.com/en-us/azure/aks/use-managed-identity). This simplifies the aks service's integration with AzureRM apis with only a simple change to the terraform `cluster.tf` file: 
@@ -56,7 +57,7 @@ metadata:
 
   * log retention improvements
   
-> **NOTE** we're currently logging >5GB a day, meaning our log retention is low. we've added some additional log filtering so we don’t reach capacity quite so quickly, and therefore increase log retention!
+We're currently log >5GB a day, meaning our log retention is low. [we've added some additional log filtering](https://github.com/arnoldclark/ac-iac-platform/pull/335) so we don’t reach capacity quite so quickly, and therefore increase log retention! Thanks Mel!
 
   * 200 - OK healthchecks now removed
  
