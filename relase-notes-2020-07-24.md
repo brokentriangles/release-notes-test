@@ -44,7 +44,7 @@ If you're interested you can [check out the PRs!](https://github.com/arnoldclark
 We also added stuff!
 
 ### 
-  * cert-manager has been rolled out cluster wide.
+  * [cert-manager](https://cert-manager.io/docs/) has been rolled out cluster wide.
 
 This allows us to automate the provisioning of certificates for your app ingress simply but adding an annotation. Pretty cool. 
 
