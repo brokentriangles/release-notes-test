@@ -4,10 +4,10 @@
  
 ### vault migration
 
-As you know vault is going away, here the latest:
+As you know vault is going away, here's the latest:
 
-* azure key vaults have now been created for all k8s deployed application and services for dev, stg and prd.
-* most apps have now transitioned to using key-vault. And who ever hasn't should be doing that now. 
+* azure key-vaults have now been created for all k8s deployed application and services for dev, stg and prd.
+* most apps have now transitioned to using key-vault. And whoever hasn't should be doing that now. 
 
 > **NOTE** Some squad level PRs are still outstanding and it's *essential* that these get merged in order to complete this migration phase.
 
