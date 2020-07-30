@@ -11,6 +11,8 @@ As you know vault is going away, here's the latest:
 
 > **NOTE** Some squad level PRs are still outstanding and it's *essential* that these get merged in order to complete this migration phase.
 
+* <LINK TO OUTSTANDING PRS>
+ 
 ## What's new?
 
 ### cluster rebuilds
