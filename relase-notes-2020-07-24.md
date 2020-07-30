@@ -71,9 +71,9 @@ aks maintains a rolling policy on k8s versioning with an [N-2 approach](https://
 * resources of type 'deployment' should update their use of the `extensions/v1beta` api to `apps/v1`
 * re-test & re-deploy
 
-> **! NOTE** this is where you come in. There will be comms sent out and it'll be mentioned again in future release notes but **be aware** that your deployments api verions will be changing. 
+> **! NOTE** this is where you come in. There will be comms sent out and it'll be mentioned again in future release notes but **be aware** that your deployment's api version's will be changing. 
  
 ## What's left?
  
-If you haven't already please deploy your applications and services to the newly rebuild `aks-cluster-2-prd` so that we can direct the traffic toward into UK South, and the `aks-cluster-1-stg` so that we may decommision that cluster. 
+If you haven't already please deploy your applications and services to UK West's newly rebuild `aks-cluster-2-prd` so that we can migrate traffic to it. And similarly if you haven't already please deploy out to UK South's `aks-cluster-1-stg` so that we may decommision our out of date resources.
 
